@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+@model GnocFluentValidation.Models.GnocModel
+<h2>Create</h2>
+
+@using (Html.BeginForm())
+{
+    @ViewBag.Message
+    @Html.ValidationSummary(true, "")
+    <table>
+        <tr>
+            <td></td>
+            <td>@Html.TextBoxFor(p=>p.Name)</td>
+            <td>@Html.ValidationMessageFor(p=>p.Name)</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>@Html.EditorFor(p => p.Age)</td>
+            <td>@Html.ValidationMessageFor(p => p.Age)</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>@Html.EditorFor(p => p.FisrtName)</td>
+            <td>@Html.ValidationMessageFor(p => p.FisrtName)</td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit"/></td>
+            <td></td>
+        </tr>
+    </table>
+}
+
