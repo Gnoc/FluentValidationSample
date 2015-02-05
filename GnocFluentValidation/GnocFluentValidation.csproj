@@ -178,6 +178,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Ultis\GnocValidatorFactory.cs" />
+    <Compile Include="ValidationAttributes\NumberValidation.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\ValidationRules.xml" />
@@ -229,9 +230,7 @@
     <Content Include="Views\Gnoc\Index.cshtml" />
     <Content Include="Views\Gnoc\Create.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Attributes\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />

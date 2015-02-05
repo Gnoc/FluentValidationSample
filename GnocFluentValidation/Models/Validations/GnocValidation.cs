@@ -16,7 +16,7 @@ namespace GnocFluentValidation.Models.Validations
             var maxLength = doc.SelectSingleNode(".//MaxLength");
 
             RuleFor(x => x.Name)
-                .NotEmpty().WithMessage("Chưa nhập kìa ku")
+                //.NotEmpty().WithMessage("Chưa nhập kìa ku")
                 .Length(0, Int32.Parse(maxLength.InnerText)).WithMessage("Lố òi!");
         }
     }

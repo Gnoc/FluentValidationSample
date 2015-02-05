@@ -22,7 +22,7 @@ namespace GnocFluentValidation
 
             FluentValidationModelValidatorProvider.Configure(provider =>
             {
-                //provider.ValidatorFactory = new MyCustomValidatorFactory();
+                provider.AddImplicitRequiredValidator = false;
             });
 
         }
